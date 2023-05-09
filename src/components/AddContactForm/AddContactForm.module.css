@@ -1,0 +1,52 @@
+.labelName{
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.inputForm{
+  border-radius: 5px;
+  background-color: rgb(220, 229, 241);
+  border: none;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  
+}
+.inputForm:hover, .inputForm:focus {
+  background-color:rgb(156, 203, 239);
+  border: 1px,solid, rgb(114, 157, 230);
+  outline: none;
+}
+
+
+
+.btnForm{
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: normal;
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(212, 218, 222);
+  border: none;
+ 
+
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}

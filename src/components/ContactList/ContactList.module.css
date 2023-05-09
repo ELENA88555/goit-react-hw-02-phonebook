@@ -1,0 +1,45 @@
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+.item {
+  
+  align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+
+.list {
+  list-style: none;
+  display: flex;
+
+  
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btnDelete {
+  display: block;
+  width: 60px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: normal;
+  border: none;
+  padding: 2px;
+  margin: 0px;
+cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: rgb(212, 218, 222);
+}
+.btnDelete:hover, .btnDelete:focus {
+  background-color:rgb(156, 203, 239);
+}
