@@ -16,7 +16,7 @@ export class App extends Component {
     filter: '',
   };
 
- loginInputId = nanoid();
+  loginInputId = nanoid();
 
   addNewContact = ({ id, name, number }) => {
     const contact = {
@@ -47,8 +47,6 @@ export class App extends Component {
       contacts: prevState.contacts.filter(contact => contact.id !== contactId),
     }));
   };
-
- 
 
   render() {
     const { filter, contacts } = this.state;

@@ -14,8 +14,12 @@ p {
 
 
 .list {
+  padding: 0;
   list-style: none;
   display: flex;
+  width: 1000px;
+
+
 
   
   flex-direction: column;
