@@ -9,14 +9,12 @@ export class AddContactForm extends Component {
   };
   loginInputId = nanoid();
 
-  handleChangeFormNumber = event => {
-    this.setState({ number: event.target.value });
-    console.log(event.target.value);
-  };
+
 
   handleChangeForm = event => {
-    this.setState({ name: event.target.value });
-    console.log(event.target.value);
+    const {name, value} = event.target;
+    this.setState({[name]: value });
+
   };
 
 
@@ -42,7 +40,7 @@ export class AddContactForm extends Component {
           onChange={this.handleChangeForm}
           id={this.loginInputId}
           type="text"
-          name={name}
+          name="name"
           className={css.inputForm}
           value={name}
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -58,9 +56,9 @@ export class AddContactForm extends Component {
              <input
              className={css.inputForm}
               id={this.loginInputId}
-              onChange={this.handleChangeFormNumber}
+              onChange={this.handleChangeForm}
               type="tel"
-              name={number}
+              name="number"
               value={number}
               pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"

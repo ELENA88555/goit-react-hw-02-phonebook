@@ -25,3 +25,14 @@ margin-left: 200px;
   font-style: normal;
   font-weight: 500;
 }
+
+.titleText{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+}
